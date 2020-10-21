@@ -10,11 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var Label: UILabel!
+    @IBOutlet weak var TestField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func WhenButtonPressed(_ sender: Any) {
+        let data = TestField.text
+        Label.text = data
+    }
+    
 }
 
